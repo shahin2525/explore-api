@@ -14,13 +14,13 @@ const object = {
 
 // const { name, age, ...rest } = object;
 const { name, age, ...rest } = object;
-console.log(rest);
+// console.log(rest);
 
 // console.log(newObjct);
 const friends = [
   {
     name: "rakik",
-    id: "aa41",
+    id: "aa42",
     age: 25,
     isSingle: true,
     contact: 12455656,
@@ -28,7 +28,7 @@ const friends = [
   },
   {
     name: "rabi",
-    id: "aa41",
+    id: "aa43",
     age: 30,
     isSingle: false,
     contact: 12455656,
@@ -36,7 +36,7 @@ const friends = [
   },
   {
     name: "saki",
-    id: "aa41",
+    id: "aa44",
     age: 35,
     isSingle: false,
     contact: 12455656,
@@ -44,12 +44,13 @@ const friends = [
   },
   {
     name: "semul",
-    id: "aa41",
+    id: "aa45",
     age: 45,
     isSingle: true,
     contact: 12455656,
     profession: "student",
   },
 ];
-const friendNames = friends.filter((f) => f.age > 30);
+const friendNames = friends.filter((f) => f.id !== "aa44");
+console.log(friendNames);
 // console.log(friendNames);
